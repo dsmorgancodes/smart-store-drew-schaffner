@@ -9,4 +9,4 @@ CustomerID,Name,Region,JoinDate,LastActiveYear,PreferredContactMethod
 1008,Tony Stark,North,5/1/20,2020,phone
 1009,Jason Bourne,West,12/1/20,2021,email
 1010,Hermione Granger,East,12/9/22,2024,phone
-1011,Hermione Grager,East,12/9/22,2022,email
+1011,Hermione Grager,East,12/9/22,2024,phone

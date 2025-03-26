@@ -1,5 +1,27 @@
-2025-03-21 22:12:50.014 | INFO     | __main__:main:41 - Starting data preparation...
-2025-03-21 22:12:50.014 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/customers_data.csv.
-2025-03-21 22:12:50.017 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/products_data.csv.
-2025-03-21 22:12:50.017 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/sales_data.csv.
-2025-03-21 22:12:50.018 | INFO     | __main__:main:45 - Data preparation complete.
+2025-03-26 09:35:39.450 | INFO     | __main__:main:162 - ==================================
+2025-03-26 09:35:39.450 | INFO     | __main__:main:163 - STARTING prepare_customers_data.py
+2025-03-26 09:35:39.450 | INFO     | __main__:main:164 - ==================================
+2025-03-26 09:35:39.450 | INFO     | __main__:main:166 - Root project folder: /Users/silvertiger/Projects/smart-store-drew-schaffner
+2025-03-26 09:35:39.450 | INFO     | __main__:main:167 - data / raw folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw
+2025-03-26 09:35:39.450 | INFO     | __main__:main:168 - data / prepared folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared
+2025-03-26 09:35:39.451 | INFO     | __main__:main:169 - scripts folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/scripts
+2025-03-26 09:35:39.451 | INFO     | __main__:read_raw_data:66 - FUNCTION START: read_raw_data with file_name=customers_data.csv
+2025-03-26 09:35:39.451 | INFO     | __main__:read_raw_data:68 - Reading data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/customers_data.csv
+2025-03-26 09:35:39.455 | INFO     | __main__:read_raw_data:70 - Loaded dataframe with 11 rows and 6 columns
+2025-03-26 09:35:39.455 | INFO     | __main__:main:178 - Initial dataframe columns: CustomerID, Name, Region, JoinDate, LastActiveYear, PreferredContactMethod
+2025-03-26 09:35:39.455 | INFO     | __main__:main:179 - Initial dataframe shape: (11, 6)
+2025-03-26 09:35:39.456 | INFO     | __main__:remove_duplicates:98 - FUNCTION START: remove_duplicates with dataframe shape=(11, 6)
+2025-03-26 09:35:39.459 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-26 09:35:39.460 | INFO     | __main__:remove_duplicates:103 - 11 records remaining after removing duplicates.
+2025-03-26 09:35:39.460 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(11, 6)
+2025-03-26 09:35:39.460 | INFO     | __main__:handle_missing_values:121 - Total missing values before handling: 0
+2025-03-26 09:35:39.460 | INFO     | __main__:handle_missing_values:130 - Total missing values after handling: 0
+2025-03-26 09:35:39.460 | INFO     | __main__:handle_missing_values:131 - 11 records remaining after handling missing values.
+2025-03-26 09:35:39.460 | INFO     | __main__:remove_outliers:145 - FUNCTION START: remove_outliers with dataframe shape=(11, 6)
+2025-03-26 09:35:39.461 | INFO     | __main__:remove_outliers:153 - Removed 0 outlier rows
+2025-03-26 09:35:39.461 | INFO     | __main__:remove_outliers:154 - 11 records remaining after removing outliers.
+2025-03-26 09:35:39.461 | INFO     | __main__:save_prepared_data:81 - FUNCTION START: save_prepared_data with file_name=customers_data_prepared.csv, dataframe shape=(11, 6)
+2025-03-26 09:35:39.462 | INFO     | __main__:save_prepared_data:84 - Data saved to /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared/customers_data_prepared.csv
+2025-03-26 09:35:39.462 | INFO     | __main__:main:202 - ==================================
+2025-03-26 09:35:39.462 | INFO     | __main__:main:203 - FINISHED prepare_customers_data.py
+2025-03-26 09:35:39.462 | INFO     | __main__:main:204 - ==================================
