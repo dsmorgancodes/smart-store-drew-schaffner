@@ -11,7 +11,7 @@ source .venv/bin/activate
 
 Run the script with the following command:
 
-python3 scripts\data\data_preparation\prepare_sales_data.py
+python3 scripts/data/data_preparation/prepare_sales_data.py
 
 NOTE: I use the ruff linter. 
 It warns if all import statements are not at the top of the file.  
