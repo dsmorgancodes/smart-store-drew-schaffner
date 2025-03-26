@@ -38,3 +38,25 @@ python3 scripts/data_prep.py
 ```
 
 This runs any script at the end of the file path if the title is correct. 
+
+## Data Cleaning
+Data cleaning is the process by which we clean data and prepare it for ETL. I've made a few comments in my python scripts to help myself with the code flow. Some of the more notable comments are: 
+
+Dr. Case has configured her files so that the file paths of the python scripts form the file paths to where the raw data is found. This is super convenient as it enables our scripts to be used with many different data sets. By adding data to raw an a script to data_preparation we can utilize prewritten code. This is the naming convention: 
+
+For Scripts - The name of .py file much match the name in the Raw Data Folder. 
+
+### Example
+If we were to have data for Bike Sales in our raw folder, our Data Preparation script for this file would be titled: 
+
+```shell
+prepare_bike_sales_data.py
+```
+
+This would be the script for the file located in the raw folder at: data/raw/bike_sales_data.csv
+
+It is worthy to note that if we get the name wrong or if we ruin case sensitivity that this will not function. 
+
+## Creating a Data Scrubbing Script
+
+I modified an existing script that I found in Dr. Case's repository. It ran all these data cleaning operations under one script. I removed the customer data script and the sales data script as we already had these. 
