@@ -70,3 +70,10 @@ dtype: int64
 2025-03-26 13:23:30.747 | INFO     | __main__:main:260 - ==================================
 2025-03-26 13:23:30.747 | INFO     | __main__:main:261 - FINISHED prepare_products_data.py
 2025-03-26 13:23:30.747 | INFO     | __main__:main:262 - ==================================
+2025-03-26 13:38:25.194 | INFO     | __main__:main:56 - ========================
+2025-03-26 13:38:25.195 | INFO     | __main__:main:57 - Starting SALES prep
+2025-03-26 13:38:25.195 | INFO     | __main__:main:58 - ========================
+2025-03-26 13:38:25.222 | INFO     | __main__:save_prepared_data:51 - Data saved to /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared/sales_data_prepared.csv
+2025-03-26 13:38:25.222 | INFO     | __main__:main:77 - ======================
+2025-03-26 13:38:25.222 | INFO     | __main__:main:78 - FINISHED Sales Prep
+2025-03-26 13:38:25.222 | INFO     | __main__:main:79 - ======================
