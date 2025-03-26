@@ -11,7 +11,7 @@ source .venv/bin/activate
 
 Run the script with the following command:
 
-python3 scripts/data/data_preparation/prepare_sales_data.py
+python3 scripts/data_preparation/prepare_sales_data.py
 
 NOTE: I use the ruff linter. 
 It warns if all import statements are not at the top of the file.  
@@ -26,7 +26,7 @@ import sys
 import pandas as pd
 
 # For local imports, temporarily add project root to Python sys.path
-PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent
+PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
