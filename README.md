@@ -59,4 +59,4 @@ It is worthy to note that if we get the name wrong or if we ruin case sensitivit
 
 ## Creating a Data Scrubbing Script
 
-I modified an existing script that I found in Dr. Case's repository. It ran all these data cleaning operations under one script. I removed the customer data script and the sales data script as we already had these. 
+I modified an existing script that I found in Dr. Case's repository. It ran all these data cleaning operations under one script. I removed the customer data script and the products data script as we already had these. My new script that I have created is useful for forcing dates to be formatted a particular way. 
