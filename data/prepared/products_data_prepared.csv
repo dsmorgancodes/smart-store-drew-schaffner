@@ -1,9 +1,9 @@
 productid,productname,category,unitprice,stockquantity,supplier
-101,laptop,Electronics,793.12,432,
-102,hoodie,Clothing,39.1,523,
-103,cable,Electronics,22.76,62,
-104,hat,Clothing,43.1,792,
-105,football,Sports,19.78,555,
-106,controller,Electronics,88.98,672,
-107,jacket,Clothing,67.02,354,
-108,protector,Electronics,12.56,457,
+101,laptop,Electronics,793.12,432,HP
+102,hoodie,Clothing,39.1,523,Nike
+103,cable,Electronics,22.76,62,RocketFish
+104,hat,Clothing,43.1,792,Nike
+105,football,Sports,19.78,555,Spalding
+106,controller,Electronics,88.98,672,Xbox
+107,jacket,Clothing,67.02,354,Nike
+108,protector,Electronics,12.56,457,Apple

@@ -77,3 +77,110 @@ dtype: int64
 2025-03-26 13:38:25.222 | INFO     | __main__:main:77 - ======================
 2025-03-26 13:38:25.222 | INFO     | __main__:main:78 - FINISHED Sales Prep
 2025-03-26 13:38:25.222 | INFO     | __main__:main:79 - ======================
+2025-03-29 16:37:46.528 | INFO     | __main__:main:41 - Starting data preparation...
+2025-03-29 16:37:46.529 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/customers_data.csv.
+2025-03-29 16:37:46.531 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/products_data.csv.
+2025-03-29 16:37:46.532 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/sales_data.csv.
+2025-03-29 16:37:46.533 | INFO     | __main__:main:45 - Data preparation complete.
+2025-03-29 16:40:57.192 | INFO     | __main__:main:41 - Starting data preparation...
+2025-03-29 16:40:57.193 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/customers_data.csv.
+2025-03-29 16:40:57.196 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/products_data.csv.
+2025-03-29 16:40:57.196 | INFO     | __main__:read_raw_data:26 - Reading raw data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/sales_data.csv.
+2025-03-29 16:40:57.197 | INFO     | __main__:main:45 - Data preparation complete.
+2025-03-29 16:42:27.813 | INFO     | __main__:main:56 - ========================
+2025-03-29 16:42:27.814 | INFO     | __main__:main:57 - Starting SALES prep
+2025-03-29 16:42:27.814 | INFO     | __main__:main:58 - ========================
+2025-03-29 16:42:27.841 | INFO     | __main__:save_prepared_data:51 - Data saved to /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared/sales_data_prepared.csv
+2025-03-29 16:42:27.841 | INFO     | __main__:main:77 - ======================
+2025-03-29 16:42:27.841 | INFO     | __main__:main:78 - FINISHED Sales Prep
+2025-03-29 16:42:27.841 | INFO     | __main__:main:79 - ======================
+2025-03-29 16:42:47.481 | INFO     | __main__:main:223 - ==================================
+2025-03-29 16:42:47.481 | INFO     | __main__:main:224 - STARTING prepare_products_data.py
+2025-03-29 16:42:47.481 | INFO     | __main__:main:225 - ==================================
+2025-03-29 16:42:47.481 | INFO     | __main__:main:227 - Root project folder: /Users/silvertiger/Projects/smart-store-drew-schaffner
+2025-03-29 16:42:47.481 | INFO     | __main__:main:228 - data / raw folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw
+2025-03-29 16:42:47.481 | INFO     | __main__:main:229 - data / prepared folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared
+2025-03-29 16:42:47.482 | INFO     | __main__:read_raw_data:55 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-29 16:42:47.482 | INFO     | __main__:read_raw_data:57 - Reading data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/products_data.csv
+2025-03-29 16:42:47.483 | INFO     | __main__:read_raw_data:59 - Loaded dataframe with 8 rows and 6 columns
+2025-03-29 16:42:47.483 | INFO     | __main__:main:238 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, Supplier
+2025-03-29 16:42:47.483 | INFO     | __main__:main:239 - Initial dataframe shape: (8, 6)
+2025-03-29 16:42:47.483 | INFO     | __main__:main:248 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, Supplier -> supplier
+2025-03-29 16:42:47.483 | INFO     | __main__:remove_duplicates:92 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-29 16:42:47.484 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-29 16:42:47.484 | INFO     | __main__:remove_duplicates:103 - 8 records remaining after removing duplicates.
+2025-03-29 16:42:47.484 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-29 16:42:47.484 | INFO     | __main__:handle_missing_values:122 - Missing values by column before handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 16:42:47.484 | INFO     | __main__:handle_missing_values:136 - Missing values by column after handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 16:42:47.484 | INFO     | __main__:handle_missing_values:137 - 8 records remaining after handling missing values.
+2025-03-29 16:42:47.484 | INFO     | __main__:standardize_formats:184 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-29 16:42:47.484 | INFO     | __main__:standardize_formats:194 - Completed standardizing formats
+2025-03-29 16:42:47.484 | INFO     | __main__:remove_outliers:151 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-29 16:42:47.485 | INFO     | __main__:remove_outliers:170 - Removed 0 outlier rows
+2025-03-29 16:42:47.485 | INFO     | __main__:remove_outliers:171 - 8 records remaining after removing outliers.
+2025-03-29 16:42:47.485 | INFO     | __main__:validate_data:207 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-29 16:42:47.485 | INFO     | __main__:validate_data:216 - Data validation complete
+2025-03-29 16:42:47.485 | INFO     | __main__:save_prepared_data:77 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-29 16:42:47.486 | INFO     | __main__:save_prepared_data:80 - Data saved to /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared/products_data_prepared.csv
+2025-03-29 16:42:47.486 | INFO     | __main__:main:260 - ==================================
+2025-03-29 16:42:47.486 | INFO     | __main__:main:261 - FINISHED prepare_products_data.py
+2025-03-29 16:42:47.486 | INFO     | __main__:main:262 - ==================================
+2025-03-29 16:42:59.673 | INFO     | __main__:main:223 - ==================================
+2025-03-29 16:42:59.674 | INFO     | __main__:main:224 - STARTING prepare_products_data.py
+2025-03-29 16:42:59.674 | INFO     | __main__:main:225 - ==================================
+2025-03-29 16:42:59.674 | INFO     | __main__:main:227 - Root project folder: /Users/silvertiger/Projects/smart-store-drew-schaffner
+2025-03-29 16:42:59.674 | INFO     | __main__:main:228 - data / raw folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw
+2025-03-29 16:42:59.674 | INFO     | __main__:main:229 - data / prepared folder: /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared
+2025-03-29 16:42:59.674 | INFO     | __main__:read_raw_data:55 - FUNCTION START: read_raw_data with file_name=products_data.csv
+2025-03-29 16:42:59.674 | INFO     | __main__:read_raw_data:57 - Reading data from /Users/silvertiger/Projects/smart-store-drew-schaffner/data/raw/products_data.csv
+2025-03-29 16:42:59.675 | INFO     | __main__:read_raw_data:59 - Loaded dataframe with 8 rows and 6 columns
+2025-03-29 16:42:59.675 | INFO     | __main__:main:238 - Initial dataframe columns: ProductID, ProductName, Category, UnitPrice, StockQuantity, Supplier
+2025-03-29 16:42:59.675 | INFO     | __main__:main:239 - Initial dataframe shape: (8, 6)
+2025-03-29 16:42:59.675 | INFO     | __main__:main:248 - Cleaned column names: ProductID -> productid, ProductName -> productname, Category -> category, UnitPrice -> unitprice, StockQuantity -> stockquantity, Supplier -> supplier
+2025-03-29 16:42:59.675 | INFO     | __main__:remove_duplicates:92 - FUNCTION START: remove_duplicates with dataframe shape=(8, 6)
+2025-03-29 16:42:59.676 | INFO     | __main__:remove_duplicates:102 - Removed 0 duplicate rows
+2025-03-29 16:42:59.676 | INFO     | __main__:remove_duplicates:103 - 8 records remaining after removing duplicates.
+2025-03-29 16:42:59.676 | INFO     | __main__:handle_missing_values:117 - FUNCTION START: handle_missing_values with dataframe shape=(8, 6)
+2025-03-29 16:42:59.676 | INFO     | __main__:handle_missing_values:122 - Missing values by column before handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 16:42:59.676 | INFO     | __main__:handle_missing_values:136 - Missing values by column after handling:
+productid        0
+productname      0
+category         0
+unitprice        0
+stockquantity    0
+supplier         0
+dtype: int64
+2025-03-29 16:42:59.676 | INFO     | __main__:handle_missing_values:137 - 8 records remaining after handling missing values.
+2025-03-29 16:42:59.676 | INFO     | __main__:standardize_formats:184 - FUNCTION START: standardize_formats with dataframe shape=(8, 6)
+2025-03-29 16:42:59.676 | INFO     | __main__:standardize_formats:194 - Completed standardizing formats
+2025-03-29 16:42:59.676 | INFO     | __main__:remove_outliers:151 - FUNCTION START: remove_outliers with dataframe shape=(8, 6)
+2025-03-29 16:42:59.676 | INFO     | __main__:remove_outliers:170 - Removed 0 outlier rows
+2025-03-29 16:42:59.676 | INFO     | __main__:remove_outliers:171 - 8 records remaining after removing outliers.
+2025-03-29 16:42:59.676 | INFO     | __main__:validate_data:207 - FUNCTION START: validate_data with dataframe shape=(8, 6)
+2025-03-29 16:42:59.677 | INFO     | __main__:validate_data:216 - Data validation complete
+2025-03-29 16:42:59.677 | INFO     | __main__:save_prepared_data:77 - FUNCTION START: save_prepared_data with file_name=products_data_prepared.csv, dataframe shape=(8, 6)
+2025-03-29 16:42:59.677 | INFO     | __main__:save_prepared_data:80 - Data saved to /Users/silvertiger/Projects/smart-store-drew-schaffner/data/prepared/products_data_prepared.csv
+2025-03-29 16:42:59.677 | INFO     | __main__:main:260 - ==================================
+2025-03-29 16:42:59.677 | INFO     | __main__:main:261 - FINISHED prepare_products_data.py
+2025-03-29 16:42:59.677 | INFO     | __main__:main:262 - ==================================
