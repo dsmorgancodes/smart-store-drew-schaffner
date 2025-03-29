@@ -60,3 +60,26 @@ It is worthy to note that if we get the name wrong or if we ruin case sensitivit
 ## Creating a Data Scrubbing Script
 
 I modified an existing script that I found in Dr. Case's repository. It ran all these data cleaning operations under one script. I removed the customer data script and the products data script as we already had these. My new script that I have created is useful for forcing dates to be formatted a particular way. 
+
+## Data Scrubber
+
+Fixing my data scrubber. We were tasked with modifying the existing code of our data scrubber class. Specificially to the 
+
+```shell 
+def format_column_strings_to_upper_and_trim(self, column: str) -> pd.DataFrame:
+```
+
+I did this by modifying my self.df[column] = self.df[column].str.upper().str.strip(). This minor change uses .str to access the string methods of the specified coloumn. upper() converts everythng to upper case. strip() strips the white spaces. We call .str every time so that we acces the string methods each time we apply out conversion. Consider the following code. 
+
+```shell
+self.df[column] = self.df[column].str.upper()
+```
+This code simply modifies and upppercases what is passed into it and stores that data as self.df[column]
+
+We can apply as many string methods as we want onto this. 
+
+```shell
+self.df[column] = self.df[column].str.upper().str.strip()
+```
+
+And so on. We do not need to write two lines of code to accomplish what can be accomplished with just one. 
