@@ -1,12 +1,12 @@
-CustomerID,Name,Region,JoinDate,LastActiveYear,PreferredContactMethod
-1001,William White,East,11/11/21,2022,email
-1002,Wylie Coyote,East,2/14/23,2025,phone
-1003,Dan Brown,West,10/19/23,2020,phone
-1004,Chewbacca,West,11/9/22,2021,email
-1005,Dr Who,North,8/18/23,2024,phone
-1006,Tiffany James,South,6/7/21,2022,email
-1007,Susan Johnson,South,6/30/23,2025,mail
-1008,Tony Stark,North,5/1/20,2020,phone
-1009,Jason Bourne,West,12/1/20,2021,email
-1010,Hermione Granger,East,12/9/22,2024,phone
-1011,Hermione Grager,East,12/9/22,2024,phone
+customer_id,name,region,join_date,last_active_year,email,preferred_contact_method
+1001,William White,East,11/11/21,2022,william@gmail.com,email
+1002,Wylie Coyote,East,2/14/23,2025,wylie@gmail.com,phone
+1003,Dan Brown,West,10/19/23,2020,dan@gmail.com,phone
+1004,Chewbacca,West,11/9/22,2021,chewy@gmail.com,email
+1005,Dr Who,North,8/18/23,2024,drwho@gmail.com,phone
+1006,Tiffany James,South,6/7/21,2022,tiff@outlook.com,email
+1007,Susan Johnson,South,6/30/23,2025,susie@gmail.com,mail
+1008,Tony Stark,North,5/1/20,2020,tony@gmail.com,phone
+1009,Jason Bourne,West,12/1/20,2021,jason@gmail.com,email
+1010,Hermione Granger,East,12/9/22,2024,hermione@gmail.com,phone
+1011,Hermione Grager,East,12/9/22,2024,hermione@gmail.com,phone
