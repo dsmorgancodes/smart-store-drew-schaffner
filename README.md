@@ -83,3 +83,8 @@ self.df[column] = self.df[column].str.upper().str.strip()
 ```
 
 And so on. We do not need to write two lines of code to accomplish what can be accomplished with just one. 
+
+## Running SQL Notes
+This was probably the most frustrating section of this course. And honestly, I don't think it has anything to do with what we were requested to do. It has a lot more to do with how reusable this code is. I think thaat if I wrote this project from scratch I would stay away from the path variables. I know it may complicate my code a little. But I feel like I could better debug my statements. My whole time was spent working on this file. And all of my issues came down to the fact that I did not have a dw directory under data. Had I had that. I almost wouldn't have had any issues. 
+
+But I did get it running. I had to add a couple tables due to the fact that I had added a couple IDs to the tables we were suggested at early on. This was kind of a mistake. But it ended up being something that was easily addressed by changing the data in the data prep tables to match. Also the column names needed to match. 
