@@ -88,3 +88,64 @@ And so on. We do not need to write two lines of code to accomplish what can be a
 This was probably the most frustrating section of this course. And honestly, I don't think it has anything to do with what we were requested to do. It has a lot more to do with how reusable this code is. I think thaat if I wrote this project from scratch I would stay away from the path variables. I know it may complicate my code a little. But I feel like I could better debug my statements. My whole time was spent working on this file. And all of my issues came down to the fact that I did not have a dw directory under data. Had I had that. I almost wouldn't have had any issues. 
 
 But I did get it running. I had to add a couple tables due to the fact that I had added a couple IDs to the tables we were suggested at early on. This was kind of a mistake. But it ended up being something that was easily addressed by changing the data in the data prep tables to match. Also the column names needed to match. 
+
+## Spark Project
+To begin, getting the jar file onto my device would not have been possible without reviewing another persons code. I do not understand what is requested of us. So I jut downloaded the Jar File from another persons repository to get this working. Without Kyle Roof's repository I am not certain I could have completed this project. I am completely uncertain about how he managed to figure this out. Best I can guess is that he has experience working with Java Classes. This was exceptionally confusing. For other users. See the below code on getting SPARK to run: 
+
+```shell
+# Start a Spark Session
+spark = SparkSession.builder \
+    .appName("SmartSales") \
+    .config("spark.jars", "/Users/silvertiger/Projects/smart-store-drew-schaffner/lib/sqlite-jdbc-3.49.1.0.jar") \
+    .config("spark.drive.extraClassPath", "/Users/silvertiger/Projects/smart-store-drew-schaffner/lib/sqlite-jdbc-3.49.1.0.jar") \
+    .getOrCreate()
+```
+
+This code can be used to load a table: 
+
+```shell
+# Load sale table
+df_sale = spark.read.format("jdbc") \
+    .option("url", "jdbc:sqlite:/Users/silvertiger/Projects/smart-store-drew-schaffner/data/dw/smart_sales.db") \
+    .option("dbtable", "sale") \
+    .option("driver", "org.sqlite.JDBC") \
+    .load()
+df_sale.show()
+```
+
+## Troubles with tables | How I figured out how to get info from an foreign id into my table summary. 
+If figured that this was something that was worth learning. So naturally, I took the time to learn how to pull data from a table referencing a foreign ID. This code is fairly straigtforward but I think explanations help people learn. So, here is how to reference a foreign id. 
+
+Step 1: Add a table by using SQL Join to join product information to each row of the database. The new table now possesses multiple columns of data based on the foreign id in sales that references the id in products. 
+
+```shell
+df_sales_trends = spark.sql("""
+SELECT
+    DATE_TRUNC('month', to_timestamp(s.sale_date, 'M/d/yy')) AS sale_month,
+    SUM(s.sale_amount) AS monthly_sales,
+    p.category AS product_category
+FROM
+    sale s
+JOIN
+    product p ON s.product_id = p.product_id
+GROUP BY
+    sale_month, p.category
+ORDER BY
+    sale_month
+""")
+```
+
+Step 2: Create a lineplot using the data. 
+
+```shell
+sns.lineplot(data = df_sales_trends.toPandas(), x="sale_month", y="monthly_sales", hue="product_category")
+plt.xticks(rotation=45)
+plt.show()
+```
+
+
+
+
+
+
+
