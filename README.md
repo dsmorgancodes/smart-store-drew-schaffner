@@ -144,6 +144,38 @@ plt.show()
 ```
 
 
+# SECTION 1 Business Goal 
+I am going to figure out which region is most profitable. And also uncover which product category is most profitable in each region. 
+
+# Section 2 Data Source
+I began with my data warehouse. The columns of data I will be using all come from three tables: Product, sale, and customer. From the sales table I will be taking the sale amount, the customer id, and the product id. From the product table, I need only product category. From the customer table, I need only the region. 
+
+# Section 3 Tools
+I will be using Python running in a python notebook with Spark (to query SQLite) and Seaborn (for visualisations). I'm using these tools because I like them more than the drag and drop options in Tableau. Also, I think Python is kind of fun. 
+
+# Section 4 Workflow and Logic
+Because my data is spread across three tables. The first step is to make a temporary join that joins the tables together. This will allow us to slice things by region to determine the most profitable region. It will also enable us to dice things by region and and category later. This is done using using Spark SQL - which I think should be called SPRQL (sparkle). 
+
+Using SPRQL I am able to temporarily join these three tables. The code is fairly straightforward. It's just SQL that pulls the needed data from all three tables into a single table. Once we do this we are ready to run python scripts to extract our insights. 
+
+# Section 5 Results
+Based on my findings. The most profitable region was East. This is borne out by the bar chart presented below: 
+
+![This image shows that the Eastern Region is the most profitable region.](images/Profit%20by%20Region.png)
+
+I was also able to find that the most profitable category of product in each region was electronics. This is borne out by the plot shown below. 
+
+![This image shows the profitabilty of each category by region](images/Profit%20by%20Category%20By%20Region.png)
+
+# Section 6 Suggested Business Action
+I suggest a review of marketing expenditures in each region. In the most profitable region this will identify what is working. In the most unprofitable region this could identify where or if money is being wasted. Also, customers could be surveyed in each region to see what they like most about the stores in the region. If the poorer performing regions have bad customer surveys then there are likely deeper issues at play than mere marketing. 
+
+# Section 7 Challenges
+This project went swimmingly actually. I did have a mild SPARK issue at the start. But having resolved my spark issues once before I was able to resolve these fairly quickly. 
+
+
+
+
 
 
 
