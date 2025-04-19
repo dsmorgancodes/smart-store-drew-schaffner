@@ -163,9 +163,17 @@ Based on my findings. The most profitable region was East. This is borne out by 
 
 ![This image shows that the Eastern Region is the most profitable region.](images/Profit%20by%20Region.png)
 
+This image here shows how I got to this point: 
+
+![code region](images/CodeRegionProfit.png)
+
 I was also able to find that the most profitable category of product in each region was electronics. This is borne out by the plot shown below. 
 
 ![This image shows the profitabilty of each category by region](images/Profit%20by%20Category%20By%20Region.png)
+
+This image here shows how I got to this point. 
+
+![code region category](images/CodeRegionCategoryProfit.png)
 
 # Section 6 Suggested Business Action
 I suggest a review of marketing expenditures in each region. In the most profitable region this will identify what is working. In the most unprofitable region this could identify where or if money is being wasted. Also, customers could be surveyed in each region to see what they like most about the stores in the region. If the poorer performing regions have bad customer surveys then there are likely deeper issues at play than mere marketing. 
